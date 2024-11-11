@@ -1,0 +1,23 @@
+.catalog-page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.catalog-page-cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #bed6ff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.catalog-card {
+    max-width: 25%;
+}

@@ -1,0 +1,43 @@
+.catalog-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #4ca2ff;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 350px;
+    max-height: 500px;
+    background-color: #4ca2ff;
+}
+
+.card-name-container {
+    display: flex;
+    width: 100%;
+    padding: 8px 10px;
+}
+
+.card-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.card-price-container {
+    display: flex;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.card-price {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.card-btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+}
