@@ -1,10 +1,11 @@
 import React from 'react';
 import Card from '../../card/Card'
+import CatalogPageContent from './catalogPageContent/CatalogPageContent'
 
 const CatalogPage = () => {
     return (
         <Card>
-            <h1>Hello</h1>
+            <CatalogPageContent />
         </Card>
     );
 };
