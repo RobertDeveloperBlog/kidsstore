@@ -41,3 +41,11 @@
     height: 50px;
     border-radius: 12px;
 }
+
+.card-btn-changed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0px;
+    gap: 60px;
+}

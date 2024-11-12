@@ -6,6 +6,7 @@ import MainPage from "./components/pages/mainPage/MainPage";
 import Header from "./components/header/Header";
 import {Link, Route, Routes} from "react-router-dom";
 import CatalogPage from "./components/pages/catalogPage/CatalogPage";
+import ShoppingCart from "./components/pages/shopcartPage/ShoppingCart";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
                     <Routes>
                         <Route path={'/'} element={<MainPage />}/>
                         <Route path={'/catalog'} element={<CatalogPage />}/>
+                        <Route path={"/shoppingcart"} element={<ShoppingCart />}/>
                     </Routes>
                 </Suspense>
 
