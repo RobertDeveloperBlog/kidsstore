@@ -61,9 +61,6 @@ const CatalogCard = ({ name, imgUrl, price, setState, state, id }) => {
 
             {Boolean(value) && (
                 <>
-                    <Button disabled={true} className="card-btn" color="dark">
-                        Добавлено
-                    </Button>
                     <div className="card-btn-changed">
                         <Button className="card-btn-changed-minus" onClick={handleDecrement}>
                             -
