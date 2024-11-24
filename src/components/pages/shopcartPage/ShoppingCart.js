@@ -3,10 +3,10 @@ import Card from '../../card/Card'
 import ShopCartTable from './shopcarttable/ShopCartTable';
 
 
-const ShoppingCart = () => {
+const ShoppingCart = ({state}) => {
     return (
         <Card>
-            <ShopCartTable />
+            <ShopCartTable state={state} />
         </Card>
     );
 };

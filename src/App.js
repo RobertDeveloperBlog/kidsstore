@@ -1,4 +1,4 @@
-import React, {Suspense} from 'react';
+import React, {Suspense, useState} from 'react';
 import './App.css';
 import {Paper} from "@mantine/core";
 import Card from "./components/card/Card";
@@ -9,6 +9,7 @@ import CatalogPage from "./components/pages/catalogPage/CatalogPage";
 import ShoppingCart from "./components/pages/shopcartPage/ShoppingCart";
 
 function App() {
+    const [state, setState] = useState([])
   return (
 
         <Paper className="layout">
@@ -17,8 +18,8 @@ function App() {
                 <Suspense fallback={<div>Loading....</div>}>
                     <Routes>
                         <Route path={'/'} element={<MainPage />}/>
-                        <Route path={'/catalog'} element={<CatalogPage />}/>
-                        <Route path={"/shoppingcart"} element={<ShoppingCart />}/>
+                        <Route path={'/catalog'} element={<CatalogPage state={state} setState={setState} />}/>
+                        <Route path={"/shoppingcart"} element={<ShoppingCart state={state} />}/>
                     </Routes>
                 </Suspense>
 
@@ -27,4 +28,8 @@ function App() {
   );
 }
 
-export default App;
+export default App
+
+
+// Контекст сделать
+// Контекст провайдер сделать
