@@ -18,7 +18,7 @@ export default function LoginModal() {
             </Modal>
 
             <Group position="center">
-                <LoginButton onclick={open}/>
+                <LoginButton onclick={open} text="Log in" color="dark"/>
             </Group>
         </>
     );
