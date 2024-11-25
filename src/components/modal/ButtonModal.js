@@ -1,24 +1,24 @@
 import { useDisclosure } from '@mantine/hooks';
-import { Modal, Button, Group } from '@mantine/core';
-import LoginButton from "../button/LoginButton";
+import { Modal, Group } from '@mantine/core';
+import AuthButton from "../button/AuthButton";
 import ModalContent from "./modalContent/ModalContent";
 
-export default function LoginModal() {
+export default function ButtonModal({text, color, title}) {
     const [opened, { open, close }] = useDisclosure(false);
 
     return (
         <>
             <Modal opened={opened} onClose={close}
-                   title="Авторизация:" centered={false}
+                   title={title} centered={false}
                    size='md' overlayProps={{
                 opacity: 0.55,
                 blur: 1,
             }}>
-            <ModalContent/>
+            <ModalContent btn_text={text} color={color}/>
             </Modal>
 
             <Group position="center">
-                <LoginButton onclick={open} text="Log in" color="dark"/>
+                <AuthButton onclick={open} text={text} color={color}/>
             </Group>
         </>
     );
