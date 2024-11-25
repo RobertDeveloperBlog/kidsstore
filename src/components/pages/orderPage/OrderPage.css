@@ -1,0 +1,15 @@
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 30px;
+}
+
+.inputs-container input {
+    padding: 20px;
+}
+
+.inputs {
+    padding: 10px 10px;
+}
