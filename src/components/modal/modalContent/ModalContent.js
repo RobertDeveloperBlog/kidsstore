@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {PasswordInput, TextInput} from "@mantine/core";
 import { IconEyeCheck, IconEyeOff } from '@tabler/icons-react';
 import ModalFooter from "../modalFooter/ModalFooter";
 
-const ModalContent = () => {
+const ModalContent = ({btn_text}) => {
+  const [value, setValue] = useState('');
     return (
         <div>
             <TextInput
+                value={value} onChange={(event) => setValue(event.currentTarget.value)}
                 placeholder="Введите Ваш email:"
                 label="E-mail:"
                 mt='xs'
@@ -23,7 +25,7 @@ const ModalContent = () => {
                 withAsterisk={true}
 
             />
-            <ModalFooter />
+            <ModalFooter btn_text={btn_text}/>
 
         </div>
     );
