@@ -3,7 +3,7 @@ import {PasswordInput, TextInput} from "@mantine/core";
 import { IconEyeCheck, IconEyeOff } from '@tabler/icons-react';
 import ModalFooter from "../modalFooter/ModalFooter";
 
-const ModalContent = ({btn_text}) => {
+const ModalContent = ({btn_text, onclick}) => {
     return (
         <div>
           {btn_text !== "Заказать" && (
@@ -54,7 +54,7 @@ const ModalContent = ({btn_text}) => {
               />
             </>
           )}
-            <ModalFooter btn_text={btn_text}/>
+            <ModalFooter btn_text={btn_text} onclick={onclick}/>
 
         </div>
     );

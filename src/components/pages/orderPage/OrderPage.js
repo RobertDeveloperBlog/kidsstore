@@ -14,7 +14,7 @@ const OrderPage = () => {
         <Input className="inputs" placeholder="Адрес доставки: " />
         <Input className="inputs" placeholder="Телефон: " />
       </div>
-      <ButtonModal color="yellow" text="Заказать" position="left"/>
+      <ButtonModal color="yellow" text="Заказать" position="left" title="Оплата:"/>
     </Card>
   );
 };

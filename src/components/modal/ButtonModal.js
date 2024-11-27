@@ -14,7 +14,7 @@ export default function ButtonModal({text, color, title, position}) {
                 opacity: 0.55,
                 blur: 1,
             }}>
-            <ModalContent btn_text={text} color={color}/>
+            <ModalContent btn_text={text} color={color} onclick={close}/>
             </Modal>
 
             <Group position={position}>
