@@ -1,9 +1,9 @@
 import { useDisclosure } from '@mantine/hooks';
-import { Modal, Group } from '@mantine/core';
-import AuthButton from "../button/AuthButton";
+import {Modal, Group, Button} from '@mantine/core';
 import ModalContent from "./modalContent/ModalContent";
+import React from "react";
 
-export default function ButtonModal({text, color, title}) {
+export default function ButtonModal({text, color, title, position}) {
     const [opened, { open, close }] = useDisclosure(false);
 
     return (
@@ -14,11 +14,11 @@ export default function ButtonModal({text, color, title}) {
                 opacity: 0.55,
                 blur: 1,
             }}>
-            <ModalContent btn_text={text} color={color}/>
+            <ModalContent btn_text={text} color={color} onclick={close}/>
             </Modal>
 
-            <Group position="center">
-                <AuthButton onclick={open} text={text} color={color}/>
+            <Group position={position}>
+              <Button color={color} onClick={open}>{text}</Button>
             </Group>
         </>
     );

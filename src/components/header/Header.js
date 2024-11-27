@@ -15,8 +15,8 @@ const Header = () => {
 
             </nav>
             <div className="buttons">
-                <ButtonModal text="Log in" color="dark" title="Авторизация:" />
-                <ButtonModal text="Sign Up" color="blue" title="Регистрация:"/>
+                <ButtonModal text="Log in" color="dark" title="Авторизация:" position="center"/>
+                <ButtonModal text="Sign Up" color="blue" title="Регистрация:" position="center"/>
             </div>
 
         </div>
